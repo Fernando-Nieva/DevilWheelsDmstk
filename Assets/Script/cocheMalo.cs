@@ -15,6 +15,7 @@ public class cocheMalo : MonoBehaviour
 			motorCarreterasScript.SpeedCocheMalo();
 			coche.GetComponent<AudioSource>().pitch = 1f;
 			Debug.Log("Coche ha entrado en el collision de ArcenCarreteras");
+		this.gameObject.GetComponent<AudioSource>().Play(); // Reproduce el sonido al entrar en la colisión
 
 
 		}
