@@ -46,6 +46,6 @@ public class PopGameOver : MonoBehaviour
 	IEnumerator CargoEscena()
 	{
 		yield return new WaitForSeconds(1);
-		SceneManager.LoadScene("Juego");
+		SceneManager.LoadScene("Intro");
 	}
 }
