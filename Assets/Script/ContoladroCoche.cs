@@ -7,7 +7,7 @@ public class ContoladorCoche : MonoBehaviour
     public GameObject Coche;
     public float velocidadMovimientoCoche;
 
-    float factor = 3;
+    //float factor = 3;
     public float anguloDeGiro;
 
 

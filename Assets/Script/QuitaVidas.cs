@@ -7,7 +7,12 @@ public class QuitaVidas : MonoBehaviour
 	public Vidas vidasScript;
 
 
-
+	private void Start()
+	{
+		VidasGO = GameObject.Find("Vidas");
+		vidasScript = VidasGO.GetComponent<Vidas>();
+	}
+	
 	private void OnTriggerEnter2D(Collider2D cInfo)
 	{
 		if (cInfo.gameObject.tag == "coche")

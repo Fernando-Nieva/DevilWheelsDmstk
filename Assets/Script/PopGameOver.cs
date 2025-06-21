@@ -34,7 +34,7 @@ public class PopGameOver : MonoBehaviour
 		// Si querés fade en texto, usar CanvasGroup. Por ahora se comenta:
 		// metrosRecorridos.CrossFadeAlpha(1, 0.3f, false);
 
-		metrosRecorridos.text = ((int)cronometroScript.distancia).ToString() + " mts";
+		metrosRecorridos.text = "Has recorrido "+((int)cronometroScript.distancia).ToString() + " mts";
 	}
 
 	public void ReinicioJuego()

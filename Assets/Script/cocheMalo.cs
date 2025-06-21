@@ -7,6 +7,17 @@ public class cocheMalo : MonoBehaviour
 	public GameObject coche;
 
 
+
+
+
+
+
+	private void Start()
+	{
+		motorCarreteras = GameObject.Find("MotorCarreteras");
+		motorCarreterasScript = motorCarreteras.GetComponent<MotorCarreteras>();
+		coche = GameObject.Find("coche");
+	}
 	private void OnCollisionEnter2D(Collision2D cInfo)
 	{ 
 	

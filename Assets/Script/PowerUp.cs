@@ -8,7 +8,11 @@ public class PowerUp : MonoBehaviour
 	public Cronometro CronometroScript;
 
 
-
+	private void Start()
+	{
+		CronometroGo = GameObject.Find("Cronometro");
+		CronometroScript = CronometroGo.GetComponent<Cronometro>();
+	}
 	private void OnTriggerEnter2D(Collider2D cInfo)
 	{
 		if (cInfo.gameObject.tag == "coche")
